@@ -17,3 +17,18 @@ new_country, new_river = input().split()
 rivers.update({new_country: new_river})
 
 print(rivers)
+
+
+
+#2esep
+commentators = {}
+while True:
+    comments = input()
+    if not comments:
+        break
+    name, comment = comments.split(': ')
+    if name not in commentators:
+        commentators[name] = 1
+    else:
+        commentators[name] += 1
+print(len(commentators))
